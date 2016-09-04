@@ -1,0 +1,47 @@
+{
+  "name": "proakt",
+  "version": "0.0.1",
+  "description": "Universal/Electron React+Redux application boilerplate, etc.",
+  "main": "index.js",
+  "bin": {
+    "proakt-api": "./bin/api.js",
+    "proakt-server": "./bin/server.js"
+  },
+  "scripts": {
+    "test": "mocha -R spec test/"
+  },
+  "author": "Joshua Gross <joshua.gross@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "piping": "^1.0.0-rc.3",
+    "pretty-error": "^2.0.0",
+    "socket.io": "^1.4.8",
+    "webpack-isomorphic-tools": "^2.5.8"
+  },
+  "peerDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-dev-expression": "^0.2.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-plugin-transform-react-display-name": "^6.8.0",
+    "babel-plugin-transform-remove-console": "^6.8.0",
+    "babel-plugin-transform-remove-debugger": "^6.8.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-plugin-typecheck": "^3.9.0",
+    "babel-plugin-unassert": "^2.1.1",
+    "babel-plugin-webpack-loaders": "^0.7.1",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-react-optimize": "^1.0.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.14.0"
+  }
+}
