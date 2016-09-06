@@ -15,3 +15,4 @@ try {
 }
 
 require('babel-register')(config);
+require('ts-babel-node/register');
