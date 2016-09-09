@@ -35,7 +35,6 @@ app.use(session({
 }));
 app.use(bodyParser.json());
 
-
 app.use((req, res) => {
   const splittedUrlPath = req.url.split('?')[0].split('/').slice(1);
 
@@ -74,6 +73,7 @@ if (config.apiPort) {
     }
     console.info('----\n==> 🌎  API is running on port %s', config.apiPort);
     console.info('==> 💻  Send requests to http://%s:%s', config.apiHost, config.apiPort);
+    console.info('Hooked up API endpoints:\n' + Object.keys(actions).map(a => '   /api/' + a).join('\n'));
   });
 
   io.on('connection', (socket) => {
