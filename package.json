@@ -14,16 +14,12 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.2",
-    "clean-webpack-plugin": "^0.1.10",
     "express": "^4.14.0",
     "express-session": "^1.14.1",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "font-awesome": "^4.6.3",
     "less": "^2.7.1",
     "piping": "^1.0.0-rc.3",
     "pretty-error": "^2.0.0",
     "socket.io": "^1.4.8",
-    "strip-loader": "^0.1.2",
     "ts-babel-node": "^1.0.0",
     "typescript": "^1.8.10"
   },
@@ -54,8 +50,9 @@
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.5.0",
     "webpack-isomorphic-tools": "^2.2.18",
-    "extract-text-webpack-plugin": "^0.9.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "font-awesome": "^4.4.0",
-    "font-awesome-webpack": "0.0.4"
+    "font-awesome-webpack": "0.0.4",
+    "webpack-sources": "0.1.2"
   }
 }

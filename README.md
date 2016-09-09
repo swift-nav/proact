@@ -23,7 +23,7 @@ applications to a subset of common dependencies and patterns, complexity over ma
 
 # Install
 
-Unfortunately babel plugins, webpack plugins, and other dependencies (which?) must be installed to the project root:
+Unfortunately babel plugins, webpack + plugins, and other dependencies (which?) must be installed to the project root:
 
 ```
 (
@@ -31,6 +31,9 @@ Unfortunately babel plugins, webpack plugins, and other dependencies (which?) mu
   npm info "$PKG" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG"
 )
 ```
+
+webpack and babel really make a lot of assumptions about where plugins are residing, and for the most part
+assume that everything is under the project root.
 
 # License
 
