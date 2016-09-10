@@ -2,13 +2,29 @@
 require('../babel.register'); // custom babel registration
 
 var path = require('path');
+var fs = require('fs');
 var projectRoot = process.cwd();
 
 // Allow require to resolve modules from the project root
 module.paths.push(path.resolve(projectRoot, './node_modules/'));
 
-var serverPath = path.resolve(projectRoot, './lib/server');
+var libServerExists = false, srcServerExists = false;
+var libServerPath = path.resolve(projectRoot, './lib/server');
+var srcServerPath = path.resolve(projectRoot, './src/server');
+try {
+  libServerPath = require.resolve(libServerPath);
+  libServerExists = fs.statSync(libServerPath).isFile();
+} catch (e) {}
+try {
+  srcServerPath = require.resolve(srcServerPath);
+  srcServerExists = fs.statSync(srcServerPath).isFile();
+} catch (e) {}
+var serverPath = (libServerExists ? libServerPath : (srcServerExists ? srcServerPath : null));
 var webpackToolsPath = path.resolve(__dirname, '../webpack/webpack-isomorphic-tools');
+
+if (serverPath === null) {
+  throw new Error('Could not find path to project server ' + libServerPath + ' \n ' + srcServerPath);
+}
 
 /**
  * Define isomorphic constants.
