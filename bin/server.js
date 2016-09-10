@@ -7,7 +7,7 @@ var projectRoot = process.cwd();
 // Allow require to resolve modules from the project root
 module.paths.push(path.resolve(projectRoot, './node_modules/'));
 
-var serverPath = path.resolve(projectRoot, './src/server');
+var serverPath = path.resolve(projectRoot, './lib/server');
 var webpackToolsPath = path.resolve(__dirname, '../webpack/webpack-isomorphic-tools');
 
 /**

@@ -10,4 +10,4 @@ if (process.env.NODE_ENV !== 'production') {
 
 const path = require('path');
 require(path.resolve(__dirname, '../babel.register')); // babel registration (runtime transpilation for node)
-require(path.resolve(__dirname, '../src/api/'));
+require(path.resolve(__dirname, '../lib/api/'));

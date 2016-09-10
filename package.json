@@ -8,7 +8,8 @@
     "proakt-server": "./bin/server.js"
   },
   "scripts": {
-    "test": "mocha -R spec test/"
+    "test": "mocha -R spec test/",
+    "build": "babel src -d lib"
   },
   "author": "Joshua Gross <joshua.gross@gmail.com>",
   "license": "MIT",
@@ -54,5 +55,8 @@
     "font-awesome": "^4.4.0",
     "font-awesome-webpack": "0.0.4",
     "webpack-sources": "0.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0"
   }
 }
