@@ -2,8 +2,8 @@
 var fs = require('fs');
 var path = require('path');
 
-// Include proakt .babelrc, not project-relative babelrc
-// The goal is for projects using proakt to not have their own babelrc at all
+// Include proact .babelrc, not project-relative babelrc
+// The goal is for projects using proact to not have their own babelrc at all
 var babelrc = fs.readFileSync(path.resolve(__dirname, './.babelrc'));
 var config;
 

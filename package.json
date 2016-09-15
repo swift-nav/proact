@@ -1,11 +1,11 @@
 {
-  "name": "proakt",
+  "name": "proact",
   "version": "0.0.1",
   "description": "Universal/Electron React+Redux application boilerplate, etc.",
   "main": "index.js",
   "bin": {
-    "proakt-api": "./bin/api.js",
-    "proakt-server": "./bin/server.js"
+    "proact-api": "./bin/api.js",
+    "proact-server": "./bin/server.js"
   },
   "scripts": {
     "test": "mocha -R spec test/",

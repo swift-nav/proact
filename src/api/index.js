@@ -1,4 +1,4 @@
-// Start api by using the `proakt-api` binary.
+// Start api by using the `proact-api` binary.
 // Assumes that we are running in an ES6 context.
 import 'babel-polyfill';
 import express from 'express';

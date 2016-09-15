@@ -1,11 +1,11 @@
-# proakt
+# proact
 
 This is an experiment to create a single source of truth to bootstrap, develop, package, and distribute universal and Electron React/Redux apps.
 
-proakt is a framework that attempts to make it easy to bootstrap an application, but also to make your application code ultimately more
+proact is a framework that attempts to make it easy to bootstrap an application, but also to make your application code ultimately more
 readable, maintanable, and production-ready.
 
-Some view frameworks like proakt as [evil][library-frameworks-evil]. The arguments are legitimate, but [I](http://www.github.com/joshuagross)
+Some view frameworks like proact as [evil][library-frameworks-evil]. The arguments are legitimate, but [I](http://www.github.com/joshuagross)
 grew sick of each of my applications having slightly different, slightly incompatible copies of boilerplate. My feeling is that by restricting
 applications to a subset of common dependencies and patterns, complexity over many applications can be reduced.
 
@@ -27,7 +27,7 @@ Unfortunately babel plugins, webpack + plugins, and other dependencies (which?) 
 
 ```
 (
-  export PKG=proakt;
+  export PKG=proact;
   npm info "$PKG" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG"
 )
 ```
