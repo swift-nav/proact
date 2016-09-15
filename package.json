@@ -1,6 +1,6 @@
 {
   "name": "proact",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Universal/Electron React+Redux application boilerplate, etc.",
   "main": "index.js",
   "bin": {
