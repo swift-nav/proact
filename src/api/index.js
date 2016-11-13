@@ -61,7 +61,6 @@ app.use((req, res) => {
   }
 });
 
-
 const bufferSize = 100;
 const messageBuffer = new Array(bufferSize);
 let messageIndex = 0;
