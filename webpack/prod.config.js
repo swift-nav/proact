@@ -29,7 +29,6 @@ try {
   console.error(err);
 }
 
-
 var babelrcObjectDevelopment = babelrcObject.env && babelrcObject.env.development || {};
 
 // merge global and dev-only plugins
@@ -80,7 +79,11 @@ module.exports = {
       'src',
       'node_modules'
     ],
-    extensions: ['', '.json', '.js', '.jsx']
+    extensions: ['', '.json', '.js', '.jsx'],
+    alias: {
+      // From mapbox-gl-js README. Required for non-browserify bundlers (e.g. webpack):
+      'mapbox-gl$': resolve('./node_modules/mapbox-gl/dist/mapbox-gl.js')
+    }
   },
   plugins: [
     new CleanPlugin([assetsPath], { root: projectRoot }),
