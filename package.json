@@ -1,6 +1,6 @@
 {
   "name": "proact",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Opinionated universal/Electron React+Redux application boilerplate and library, etc.",
   "repository": {
     "type": "git",
