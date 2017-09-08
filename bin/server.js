@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+require('dotenv').config();
+
 require('../babel.register'); // custom babel registration
 
 var path = require('path');
